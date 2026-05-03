@@ -89,15 +89,15 @@ export default function Home() {
             {connected ? (
               <>
                 <Link to={"/dashboard"}>
-                  <div className="hidden sm:flex items-center gap-2 text-blue-100 text-sm">
-                    <div className="w-8 h-8 rounded-full bg-brand border border-blue-200 flex items-center justify-center text-xs font-bold text-white uppercase">
+                  <div className="flex items-center gap-2 text-blue-100 text-sm">
+                    <div className="w-8 h-8 mr-5 sm:mr-0 rounded-full bg-brand border border-blue-200 flex items-center justify-center text-xs font-bold text-white uppercase">
                       {user?.username.split(' ')
                           .map(w => w.charAt(0))
                           .join('')
                           .slice(0, 2)
                           .toUpperCase()}
                     </div>
-                    <span className="text-sm font-medium text-brand pr-3">
+                    <span className="hidden sm:block text-sm font-medium text-brand pr-3">
                       {user?.username}
                     </span>
                   </div>

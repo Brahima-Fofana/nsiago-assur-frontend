@@ -39,11 +39,11 @@ export default function Navbar() {
           {/* Right */}
           <div className="flex items-center gap-3">
             <Link to={"/dashboard"}>
-              <div className="hidden sm:flex items-center gap-2 text-blue-100 text-sm">
-                <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold text-white uppercase">
+              <div className="flex items-center gap-2 text-blue-100 text-sm">
+                <div className="w-7 h-7 mr-5 sm:mr-0 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold text-white uppercase">
                   {initials_username}
                 </div>
-                <span>{username}</span>
+                <span className="hidden sm:block">{username}</span>
               </div>
             </Link>
 
