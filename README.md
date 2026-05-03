@@ -129,7 +129,6 @@ src/
 npm run dev        # Lancer le serveur de développement → http://localhost:5173
 npm run build      # Builder pour la production → dossier dist/
 npm run preview    # Prévisualiser le build de production
-npm run lint       # Lancer ESLint
 ```
 
 ---
